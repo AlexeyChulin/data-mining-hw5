@@ -23,7 +23,7 @@ class NewsJSONPipeline:
 
 class NewsCSVPipeline:
     def open_spider(self, spider):
-        self.file = open("news.csw", "w")
+        self.file = open("news.csv", "w")
         self.file.write('Header;Source;DateTime;URL\n')
 
     def close_spider(self, spider):
